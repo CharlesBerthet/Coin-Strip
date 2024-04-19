@@ -1,0 +1,46 @@
+\hypertarget{grid_8c}{}\doxysection{src/common/grid.c File Reference}
+\label{grid_8c}\index{src/common/grid.c@{src/common/grid.c}}
+{\ttfamily \#include \char`\"{}grid.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$syslog.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{grid_8c_afa9a8f09811748b780fbe53f4be25d42}{init\+\_\+grid}} (Grid $\ast$g, int nb\+Jetons)
+\item 
+int \mbox{\hyperlink{grid_8c_ae4465dcd067e60723fc95c4819f48fde}{verify\+\_\+grid}} (Grid $\ast$g)
+\item 
+int \mbox{\hyperlink{grid_8c_aaec67db767b0fbc3f1d1751e93dbac2a}{moove\+\_\+coin}} (Grid $\ast$g, int final\+Position)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{grid_8c_afa9a8f09811748b780fbe53f4be25d42}\label{grid_8c_afa9a8f09811748b780fbe53f4be25d42}} 
+\index{grid.c@{grid.c}!init\_grid@{init\_grid}}
+\index{init\_grid@{init\_grid}!grid.c@{grid.c}}
+\doxysubsubsection{\texorpdfstring{init\_grid()}{init\_grid()}}
+{\footnotesize\ttfamily void init\+\_\+grid (\begin{DoxyParamCaption}\item[{Grid $\ast$}]{g,  }\item[{int}]{nb\+Jetons }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{grid_8c_aaec67db767b0fbc3f1d1751e93dbac2a}\label{grid_8c_aaec67db767b0fbc3f1d1751e93dbac2a}} 
+\index{grid.c@{grid.c}!moove\_coin@{moove\_coin}}
+\index{moove\_coin@{moove\_coin}!grid.c@{grid.c}}
+\doxysubsubsection{\texorpdfstring{moove\_coin()}{moove\_coin()}}
+{\footnotesize\ttfamily int moove\+\_\+coin (\begin{DoxyParamCaption}\item[{Grid $\ast$}]{g,  }\item[{int}]{final\+Position }\end{DoxyParamCaption})}
+
+Fonction permettant de bouger un coin vers la gauche 
+\begin{DoxyParams}{Parameters}
+{\em g,grille} & prise en compte dans la fonction \\
+\hline
+{\em final\+Position,position} & finale choisi par le joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la nouvelle grille avec le changement de position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grid_8c_ae4465dcd067e60723fc95c4819f48fde}\label{grid_8c_ae4465dcd067e60723fc95c4819f48fde}} 
+\index{grid.c@{grid.c}!verify\_grid@{verify\_grid}}
+\index{verify\_grid@{verify\_grid}!grid.c@{grid.c}}
+\doxysubsubsection{\texorpdfstring{verify\_grid()}{verify\_grid()}}
+{\footnotesize\ttfamily int verify\+\_\+grid (\begin{DoxyParamCaption}\item[{Grid $\ast$}]{g }\end{DoxyParamCaption})}
+
